@@ -1,0 +1,16 @@
+//--------------------------------------------------------------
+// Header
+//--------------------------------------------------------------
+
+section.site-branding {padding: rem(20) 0; }
+.site-title {
+	font-size: rem(48);
+	margin:0;
+	img {height:50px;}
+	line-height: 40px;
+}
+
+.site-description {
+	font-size: rem(24);
+	margin: 0 0 rem(24) 0;
+}

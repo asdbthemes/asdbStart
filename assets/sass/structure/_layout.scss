@@ -1,0 +1,76 @@
+//--------------------------------------------------------------
+// Base Layout
+//--------------------------------------------------------------
+
+// Structure
+
+.boxed #page {
+	@include outer-container;
+	background: #fff;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.wrap {
+	@include outer-container;
+//	@include row(table);
+
+	padding: 0 $margin-wrap;
+
+	@include media($desktop) {
+		padding: 0;
+	}
+}
+
+.site-header,
+.site-footer {
+//	padding: 0 $gutter;
+
+//	@include media($tablet-landscape) {
+//		padding: 0 2 * $gutter;
+//	}
+
+}
+
+.site-content {
+	margin: rem(20) auto;
+
+	@include media($desktop) {
+		margin: 0 auto;
+	}
+}
+
+.primary {
+	@include fill-parent;
+
+	@include media($tablet-landscape) {
+		@include span-columns(9);
+	}
+}
+
+.secondary {
+	@include fill-parent;
+
+	@include media($tablet-landscape) {
+		@include span-columns(3);
+	}
+}
+
+.s1-left .primary {
+	@include fill-parent;
+
+	@include media($tablet-landscape) {
+		@include span-columns(9);
+		@include shift(3);
+	}
+}
+
+.s1-left .secondary {
+	@include fill-parent;
+
+	@include media($tablet-landscape) {
+		@include span-columns(3);
+		@include shift(-9);
+	}
+}
+

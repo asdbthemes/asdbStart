@@ -1,0 +1,49 @@
+/*  header : nav subheader
+/* ------------------------------------ */
+#nav-subheader.nav-container { background: #f2f2f2; border-bottom: 1px solid #e1e1e1; z-index: 96; }
+#nav-subheader .nav-toggle { background: transparent; color: #555; }
+#nav-subheader .nav-text { color: #555; }
+
+@media only screen and (min-width: 720px) {
+
+	/* common */
+	#nav-subheader .nav { font-weight: 300; text-transform: uppercase; }
+	#nav-subheader .nav li a { font-size: 14px; color: #555; border-bottom: 2px solid transparent; }	
+	/* level 1 */
+	#nav-subheader .nav > li { border-right: 1px solid #e8e8e8; }
+	#nav-subheader .nav > li > a { padding: 11px 14px 9px; }
+	#nav-subheader .nav > li > a:hover, 
+	#nav-subheader .nav > li:hover > a { background: transparent; border-bottom-color: #222; }
+	#nav-subheader .nav li > a:hover, 
+	#nav-subheader .nav li:hover > a, 
+	#nav-subheader .nav li.current_page_item > a, 
+	#nav-subheader .nav li.current-menu-item > a,
+	#nav-subheader .nav li.current-menu-ancestor > a,
+	#nav-subheader .nav li.current-post-parent > a { color: #000; }
+	#nav-subheader .nav li.current_page_item > a, 
+	#nav-subheader .nav li.current-menu-item > a,
+	#nav-subheader .nav li.current-menu-ancestor > a,
+	#nav-subheader .nav li.current-post-parent > a { border-bottom-color: #e1e1e1; }
+	#nav-subheader .nav li.current_page_item:hover > a, 
+	#nav-subheader .nav li.current-menu-item:hover > a,
+	#nav-subheader .nav li.current-menu-ancestor:hover > a,
+	#nav-subheader .nav li.current-post-parent:hover > a { border-bottom-color: #222; }
+	/* level 2 & 3 */
+	#nav-subheader .nav > li > ul { top: 42px; }
+	#nav-subheader .nav ul { background: #f2f2f2; }
+	#nav-subheader .nav ul li { border-bottom: 1px solid #e8e8e8; }
+	#nav-subheader .nav ul li:last-child { border-bottom: none; }
+	#nav-subheader .nav ul li a { border: none; }
+}
+@media only screen and (max-width: 719px) {
+	
+	/* common */
+	#nav-subheader .nav { padding-bottom: 20px; }
+	#nav-subheader .nav li a { color: #555; border-bottom: 1px solid #e8e8e8; }	
+	/* level 1 */
+	#nav-subheader .nav li > a:hover,
+	#nav-subheader .nav li.current_page_item > a, 
+	#nav-subheader .nav li.current-menu-item > a,
+	#nav-subheader .nav li.current-post-parent > a { background: #e8e8e8; color: #000; }
+	
+}
