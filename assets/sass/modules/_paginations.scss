@@ -14,3 +14,8 @@
 .wp-pagenavi a:hover,
 .wp-pagenavi a:active,
 .wp-pagenavi span.current { background: none; border: none; border-bottom: 3px solid #26abd3; border-top: 1px solid #eee; }
+.next-prev {
+	span {margin-bottom:15px;
+	a {color:$color-white;padding:5px 15px;background:$color-primary;}
+	}
+}
